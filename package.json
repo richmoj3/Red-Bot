@@ -1,0 +1,30 @@
+{
+  "name": "Red-Bot",
+  "version": "0.1.0",
+  "description": "A Discord bot for the /r/TaylorSwift channel.",
+  "author": "richmoj3",
+  "contributors": [
+    { "name": "EnchantedLuna"}, 
+    { "name":"Donran" }
+  ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/richmoj3/Red-Bot"
+  },
+    "bugs": {
+    "url": "https://github.com/richmoj3/Red-Bot/issues"
+  },
+  "keywords": [
+    "discord",
+    "node",
+    "bot",
+    "taylorswift"
+  ],
+  "dependencies": {
+    "discord.js": ">=5.x",
+    "discord.io": ">=1.5.x",
+    "node-opus": ">=0.1.x",
+    "apigiphy": "*"
+  }
+}
+  
