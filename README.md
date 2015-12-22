@@ -1,6 +1,6 @@
 # Red-Bot
 A bot for the /r/TaylorSwift Discord server.
-For questions you can pm Historicc in the server.
+This bot is a Work In Progress
 
 ### Usage
 This bot is currently set up for linux, If you want to run it on windows make sure you change instances of '\n' with '\r\n' 
