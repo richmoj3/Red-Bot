@@ -1,6 +1,6 @@
 var DiscordClient = require('discord.io');
 var fs = require('fs');
-var creds = require("../auth.json");
+var creds = require("./auth.json");
 var bot = new DiscordClient({
 	email: creds.email,
 	password: creds.password,
