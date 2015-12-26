@@ -105,7 +105,7 @@ function play(){
 	});
 }
 function current(channelID){
-	bot.sendMessage({to:channelID,message: currentSong + ", is currently playing."});
+	bot.sendMessage({to:channelID,message: "\"" + currentSong + "\" is currently playing."});
 }
 
 /* The reason for the stopped bool is because stoping the song will emit 
