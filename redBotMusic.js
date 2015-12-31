@@ -38,6 +38,7 @@ bot.on('message', function(user, userID, channelID, message, rawEvent) {
 				stop();
 			break;
 		case "!queue":
+	        case "!q":
 			q(message,channelID,user,userID,cmd);break;
 		case "!skip":
 			skip(user);break;
@@ -45,8 +46,6 @@ bot.on('message', function(user, userID, channelID, message, rawEvent) {
 			clear(user);break;
 		case "!current":
 			current(channelID);break;
-		case "!q":
-			q(message,channelID,user,userID,cmd);break;
 		case "!updatesonglist":
 			if(user === mods[0])
 				update(message);
@@ -119,7 +118,7 @@ function stop(){
 }
 
 function q(message, channelID, user, userID, cmd){
-	if((message === "!queue") || (message === "!q")){
+	if((message.toLowerCase() === "!queue") || (message.toLowerCase() === "!q")){
 		printQ(message,channelID);
 	}else{	
 		var title = message.substring(cmd.length + 1).toLowerCase();
