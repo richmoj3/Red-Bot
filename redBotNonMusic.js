@@ -106,14 +106,18 @@ function gif(msg){
 
 function celsius(msg){
 	var f = parseFloat(msg.content.substring(msg.content.indexOf(' ')+1));
-	var c = (5/9)*(f - 32);
-	mybot.reply(msg, Number(c.toFixed(1)));
+	if(!isNaN(f)){
+		var c = (5/9)*(f - 32);
+		mybot.reply(msg, Number(c.toFixed(1)));
+	}
 }
 
 function farenheit(msg){
 	var c = parseFloat(msg.content.substring(msg.content.indexOf(' ')+1));
-	var f = (9/5)*c + 32;
-	mybot.reply(msg, Number(f.toFixed(1)));
+	if(!isNaN(c)){
+		var f = (9/5)*c + 32;
+		mybot.reply(msg, Number(f.toFixed(1)));	
+	}
 }
 
 function kanye(msg){
