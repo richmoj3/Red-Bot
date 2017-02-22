@@ -52,7 +52,7 @@ Poll.prototype.pollCommand = function(msg, isMod) {
 			returnText = this.closePoll();
 		} else {
 			this.poll["timeLeft"] = 120 - ((this.poll["endTime"] - this.poll["timer"]) / 1000);
-			returnText =  "this poll needs to be closed by " + this.poll["creator"].username + " or by anyone in " + this.poll["timeLeft"] + " seconds.";
+			returnText =  "this poll needs to be closed by " + this.poll["creator"].username + " or by anyone in " + Math.round(this.poll["timeLeft"]) + " seconds.";
 		}
 	} else {
 		returnText = "No poll is active, start a poll by typing !poll option1, option2, option3...";
